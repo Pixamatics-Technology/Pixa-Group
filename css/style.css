@@ -6603,3 +6603,23 @@ h1, h2, h3, h4, h5, h6 {
     display: table;
     color: #fff;
 }
+
+/* about us section */
+.description_about_us_area{
+  margin: 10px;
+}
+.description_about_us_area h2{
+  color: #000000;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 27px;
+    text-transform: capitalize;
+    line-height: 1.2em;
+}
+.description_about_us_area p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
