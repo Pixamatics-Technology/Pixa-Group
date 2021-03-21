@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Pixa_Group || Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" href="img/favicon.png">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -113,8 +114,7 @@
             </div>
         </div>
         <a href="https://www.youtube.com/watch?v=pBFQdxA-apI" class="popup-youtube video_popup"><span
-                class="fas fa-play"></i>
-            </span></a>
+                class="fas fa-play"></i></span></a>
     </section>
 
 
@@ -395,47 +395,47 @@
     <div class="cta_part">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col">
-                    <div class="counter">
+                <div class="col ">
+                    <div class="counter counter_fabric">
                         <i class="fas fa-users fa-2x"></i>
                         <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
                         <p class="count-text">Fabric</p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="counter">
+                <div class="col counter_garment">
+                    <div class="counter ">
                         <i class="fas fa-smile fa-2x"></i>
                         <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
                         <p class="count-text">Garment</p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="counter">
+                <div class="col counter_embriodery">
+                    <div class="counter ">
                         <i class="fas fa-tasks fa-2x"></i>
                         <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
                         <p class="count-text">Embroidery</p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="counter">
+                <div class="col counter_printing">
+                    <div class="counter ">
                         <i class="fas fa-mug-hot fa-2x"></i>
-                      
+
                         <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
                         <p class="count-text">Printing</p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="counter">
+                <div class="col counter_washing">
+                    <div class="counter ">
                         <i class="fas fa-mug-hot fa-2x"></i>
-                      
+
                         <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
                         <p class="count-text">Washing</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col  counter_employee">
                     <div class="counter">
                         <i class="fas fa-mug-hot fa-2x"></i>
-                      
+
                         <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
                         <p class="count-text">Employee</p>
                     </div>
@@ -536,7 +536,7 @@
                         <h4>About Us</h4>
                         <p>Heaven fruitful doesn't over lesser days appear creeping seasons so behold bearing days open
                         </p>
-                        <a href="index.html" class="footer_logo"> <img src="img/footer_logo.png" alt="#"> </a>
+                        <a href="index.html" class="footer_logo"> <img src="./img/logo/logo-2.jpg" alt="#"> </a>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
@@ -574,6 +574,12 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
             <hr>
             <div class="row">
                 <div class="col-sm-6 col-lg-6">
@@ -583,8 +589,7 @@
                             <script data-cfasync="false"
                                 src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                             <script>document.write(new Date().getFullYear());</script> All rights reserved | This
-                            template is made by <a
-                                href="#" target="_blank">Pixamatics</a>
+                            template is made by <a href="#" target="_blank">Pixamatics</a>
                         </P>
                     </div>
                 </div>
@@ -604,6 +609,7 @@
 
 
 
+
     <script src="js/jquery-1.12.1.min.js"></script>
 
     <script src="js/popper.min.js"></script>
@@ -617,6 +623,9 @@
     <script src="js/jquery.easing.min.js"></script>
 
     <script src="js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
     <script src="https://kit.fontawesome.com/642c256da8.js" crossorigin="anonymous"></script>
@@ -626,6 +635,49 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-23581568-13');
+    </script>
+    <script>
+        /*var waypoint = new Waypoint({
+            element: document.getElementById('px-offset-waypoint'),
+            handler: function (direction) {
+                notify('I am 20px from the top of the window')
+            },
+            offset: 20
+        })*/
+
+
+        $(document).ready(function(){
+            $('.counter_fabric').waypoint(function(direction){
+                $('.counter_fabric').addClass('animated backInDown')
+            },{
+                offset : '80%'
+            });
+            $('.counter_garment').waypoint(function(direction){
+                $('.counter_garment').addClass('animated slideInLeft')
+            },{
+                offset : '80%'
+            });
+            $('.counter_embriodery').waypoint(function(direction){
+                $('.counter_embriodery').addClass('animated bounceIn')
+            },{
+                offset : '80%'
+            });
+            $('.counter_printing').waypoint(function(direction){
+                $('.counter_printing').addClass('animated fadeInLeft')
+            },{
+                offset : '80%'
+            });
+            $('.counter_washing').waypoint(function(direction){
+                $('.counter_washing').addClass('animated fadeInUpBig')
+            },{
+                offset : '80%'
+            });
+            $('.counter_employee').waypoint(function(direction){
+                $('.counter_employee').addClass('animated rotateIn')
+            },{
+                offset : '80%'
+            });
+        });
     </script>
 </body>
 

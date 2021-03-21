@@ -3021,7 +3021,7 @@ ul {
 /* line 48, E:/161 Real estate/161_Real_state_html/sass/_footer.scss */
 
 .footer_part .single_footer_part p {
-  color: #7f7f7f;
+  color: #cfb579;
   margin-bottom: 8px;
 }
 
@@ -3034,7 +3034,7 @@ ul {
 /* line 59, E:/161 Real estate/161_Real_state_html/sass/_footer.scss */
 
 .footer_part .single_footer_part .list-unstyled li a {
-  color: #7f7f7f;
+  color: #cfb579;
   margin-bottom: 10px;
   display: inline-block;
 }
@@ -3042,7 +3042,7 @@ ul {
 /* line 63, E:/161 Real estate/161_Real_state_html/sass/_footer.scss */
 
 .footer_part .single_footer_part .list-unstyled li a:hover {
-  color: #cfb579 !important;
+  color: white !important;
 }
 
 /* line 70, E:/161 Real estate/161_Real_state_html/sass/_footer.scss */
@@ -3080,7 +3080,7 @@ ul {
 /* line 94, E:/161 Real estate/161_Real_state_html/sass/_footer.scss */
 
 .footer_part hr {
-  background-color: #494d58;
+  background-color: #cfb579;
   margin-top: 50px;
   margin-bottom: 25px;
 }
@@ -3101,7 +3101,7 @@ ul {
 
 .footer_part .footer_icon li a {
   font-size: 14px;
-  color: #fff;
+  color: #cfb579;
   margin-left: 30px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -3126,7 +3126,7 @@ ul {
 /* line 122, E:/161 Real estate/161_Real_state_html/sass/_footer.scss */
 
 .footer_part .footer_icon li a :hover {
-  color: #cfb579;
+  color: white;
 }
 
 @media (max-width: 576px) {
@@ -6569,57 +6569,125 @@ h1, h2, h3, h4, h5, h6 {
 
 /*# sourceMappingURL=style.css.map */
 
-
 /** Counter Design **/
+
 .counter {
-    background-color:#cfb579;
-    padding: 20px 0;
-    border-radius: 5px;
+  background-color: #cfb579;
+  padding: 20px 0;
+  border-radius: 5px;
 }
 
 .count-title {
-    font-size: 40px;
-    font-weight: normal;
-    margin-top: 10px;
-    margin-bottom: 0;
-    text-align: center;
-    color: #fff;
-    
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+  color: #fff;
 }
 
 .count-text {
-    font-size: 25px;
-    font-weight: normal;
-    margin-top: 10px;
-    margin-bottom: 0;
-    text-align: center;
-    color: #fff;
-    
+  font-size: 25px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+  color: #fff;
 }
 
 .fa-2x {
-    margin: 0 auto;
-    float: none;
-    display: table;
-    color: #fff;
+  margin: 0 auto;
+  float: none;
+  display: table;
+  color: #fff;
 }
 
 /* about us section */
-.description_about_us_area{
+
+.description_about_us_area {
   margin: 10px;
 }
-.description_about_us_area h2{
+
+.description_about_us_area h2 {
   color: #000000;
-    font-size: 50px;
-    font-weight: 600;
-    margin-bottom: 27px;
-    text-transform: capitalize;
-    line-height: 1.2em;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 27px;
+  text-transform: capitalize;
+  line-height: 1.2em;
 }
-.description_about_us_area p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+
+.description_about_us_area p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/** Footer Animation Area **/
+
+.footer_bg {
+  position: relative;
+  background: url("http://droitthemes.com/html/saasland/img/seo/footer_bg.png") no-repeat scroll center 0;
+  width: 100%;
+  height: 266px;
+}
+
+.footer_bg .footer_bg_one {
+  background: url("https://1.bp.blogspot.com/-mvKUJFGEc-k/XclCOUSvCnI/AAAAAAAAUAE/jnBSf6Fe5_8tjjlKrunLBXwceSNvPcp3wCLcBGAsYHQ/s1600/volks.gif") no-repeat center center;
+  width: 330px;
+  height: 105px;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  -webkit-animation: myfirst 22s linear infinite;
+  animation: myfirst 22s linear infinite;
+}
+
+.footer_bg .footer_bg_two {
+  background: url("https://1.bp.blogspot.com/-hjgfxUW1o1g/Xck--XOdlxI/AAAAAAAAT_4/JWYFJl83usgRFMvRfoKkSDGd--_Sv04UQCLcBGAsYHQ/s1600/cyclist.gif") no-repeat center center;
+  width: 88px;
+  height: 100px;
+  background-size: 100%;
+  bottom: 0;
+  left: 38%;
+  position: absolute;
+  -webkit-animation: myfirst 30s linear infinite;
+  animation: myfirst 30s linear infinite;
+}
+
+@-moz-keyframes myfirst {
+  0% {
+    left: 25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: 25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
+/*counter part animation */
+
+.counter_fabric .animated{
+  opacity: 1;
 }
