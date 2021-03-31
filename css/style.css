@@ -6990,3 +6990,12 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 65px;
   }
 }
+
+/* company profile */
+.company_profile{
+  height: 390px;
+  background: url('../img/profileaboutbg/1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
